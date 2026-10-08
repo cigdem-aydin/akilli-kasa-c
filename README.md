@@ -1,8 +1,8 @@
-# akilli-kasa-c
+# akilli-kasa-c (Smart Cash Register)
 
 Bu proje, bir mağazadaki kasiyerin girdiği **ürün tutarı** ve **alınan ödemeye** göre verilecek para üstünü hesaplayan ve bu para üstünü **en az sayıda banknot ve madeni para** ile veren bir C programıdır.
 
-Proje, kontrol ve döngü yapıları (`if`, `else`, `for`, `while`) kullanılmadan, yalnızca temel veri tipleri, aritmetik işlemler ve mod (`%`) operatörü ile geliştirilmiştir.
+Proje; kontrol ve döngü yapıları (`if`, `else`, `for`, `while`) kullanılmadan, yalnızca temel veri tipleri, aritmetik işlemler ve mod (`%`) operatörü kullanılarak geliştirilmiştir.
 
 ---
 
