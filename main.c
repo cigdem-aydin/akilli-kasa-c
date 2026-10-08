@@ -8,30 +8,30 @@ int main() {
     int tl1, madeni50, madeni25, madeni10, madeni5, madeni1;
     int toplamkupursayisi;
 
-    // Kullanıcıdan ürün tutarı ve ödenen parayı alma
+    // KullanÄ±cÄ±dan Ã¼rÃ¼n tutarÄ± ve Ã¶denen parayÄ± alma
     printf("Urun tutarini giriniz (TL): ");
     scanf("%f", &uruntutari);
 
     printf("Odenen parayi giriniz (TL): ");
     scanf("%f", &odenenpara);
 
-    // Para üstünü hesaplama
+    // Para Ã¼stÃ¼nÃ¼ hesaplama
     paraustu = odenenpara - uruntutari;
 
-    // Yuvarlama yapmadan kuruşa çevirme
+    // Yuvarlama yapmadan kuruÅŸa Ã§evirme
     yuvarlamasiz_kurus = (int)(paraustu * 100.0f);
 
-    // Doğru yuvarlama
+    // DoÄŸru yuvarlama
     toplamkurus = (int)(paraustu * 100.0f + 0.5f);
 
-    // Sonuçları gösterme
+    // SonuÃ§larÄ± gÃ¶sterme
     printf("\n************************************\n");
     printf("Para Ustu: %.2f TL\n", paraustu);
     printf("Yuvarlamasiz Kurus: %d Kr\n", yuvarlamasiz_kurus);
     printf("Dogru Yuvarlanmis Kurus: %d Kr\n", toplamkurus);
     printf("************************************\n\n");
 
-    // Küpür hesaplama
+    // KÃ¼pÃ¼r hesaplama
     kalan = toplamkurus;
 
     kagit200 = kalan / 20000;
@@ -69,10 +69,10 @@ int main() {
 
     madeni1 = kalan;
 
-    // Toplam küpür sayısını hesaplama
+    // Toplam kÃ¼pÃ¼r sayÄ±sÄ±nÄ± hesaplama
     toplamkupursayisi = kagit200 + kagit100 + kagit50 + kagit20 + kagit10 + kagit5 + tl1 + madeni50 + madeni25 + madeni10 + madeni5 + madeni1;
 
-    // Sonuçları ekrana yazdırma
+    // SonuÃ§larÄ± ekrana yazdÄ±rma
     printf("VERILECEK BANKNOT VE MADENI PARALAR:\n");
 
     printf("200 TL : %d adet\n", kagit200);
@@ -90,6 +90,6 @@ int main() {
 
     printf("************************************\n");
     printf("TOPLAM KUPUR SAYISI: %d adet\n", toplamkupursayisi);
-
+ 
     return 0;
 }
